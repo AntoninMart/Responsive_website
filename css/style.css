@@ -1,10 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:wght@100..700&display=swap');
+
 /* section{
     background-color: red;
 } */
 
 body {
-    background-color: #023e8a;
+    padding: 0;
+    margin: 0;
+    /* background-color: #efefef; */
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    /* scroll-behavior: smooth; */
+    background-image: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
+    background-size: 400% 400%;
+    animation: bganimation 15s infinite;
 }
+
+@keyframes bganimation {
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+  }
+  
 
 a {
     text-decoration: none;
@@ -153,5 +177,108 @@ a {
         top: auto;
         bottom: 1px;
         right: 30px;
+    }
+}
+
+/*------------------------------------------------------*/
+/*--------------------A N I M  T E X T------------------*/
+/*------------------------------------------------------*/
+
+.home-anim {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    color: black;
+    font-family: "Roboto Mono", monospace;
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 5px;
+    overflow: hidden;
+}
+
+/*E T U D I A N T*/
+
+.home-anim span:nth-child(1){
+    color: black;
+    animation: animText 0.8s ease-in-out infinite;
+}
+
+.home-anim span:nth-child(2){
+    color: black;
+    animation: animText 1.2s ease-in-out infinite;
+}
+
+.home-anim span:nth-child(3){
+    color: black;
+    animation: animText 1.6s ease-in-out infinite;
+}
+
+.home-anim span:nth-child(4){
+    color: black;
+    animation: animText 1.8s ease-in-out infinite;
+}
+
+/*I N G E N I E U R*/
+
+.home-anim span:nth-child(5){
+    color: black;
+    animation: animText 0.8s ease-in-out infinite;
+}
+
+.home-anim span:nth-child(6){
+    color: black;
+    animation: animText 1.2s ease-in-out infinite;
+}
+
+.home-anim span:nth-child(7){
+    color: black;
+    animation: animText 1.6s ease-in-out infinite;
+}
+
+.home-anim span:nth-child(8){
+    color: black;
+    animation: animText 2.2s ease-in-out infinite;
+}
+
+.home-anim span:nth-child(9){
+    color: black;
+    animation: animText 2.4s ease-in-out infinite;
+}
+
+.home-anim span:nth-child(10){
+    color: black;
+    animation: animText 2.6s ease-in-out infinite;
+}
+
+/* ! */
+
+.home-anim span:nth-child(11){
+    color: black;
+    animation: animMark 1s ease-in-out infinite;
+}
+
+@keyframes animText {
+    0%{
+        font-weight: 200;
+    }
+    50%{
+        font-weight: 900;
+    }
+    100%{
+        font-weight: 200;
+    }
+}
+
+@keyframes animMark{
+    0%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(30deg);
     }
 }
