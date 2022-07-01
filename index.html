@@ -13,179 +13,51 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-auto bg-light sticky-top">
-                <div class="d-flex flex-sm-column flex-row flex-nowrap bg-light align-items-center sticky-top">
-                    
-                    <a href="/" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
-                        <i class="bi-bootstrap fs-1"></i>
-                    </a>
-                    <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center justify-content-between w-100 px-3 align-items-center">
-                        <li class="nav-item">
-                            <a href="#Accueil" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
-                                <i class="bi-house fs-1" style="color: #ff7948;"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#Parcours" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
-                                <i class="bi-mortarboard fs-1" style="color: #ff7948;"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Orders">
-                                <i class="bi-table fs-1" style="color: #ff7948;"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">
-                                <i class="bi-heart fs-1" style="color: #ff7948;"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
-                                <i class="bi-people fs-1" style="color: #ff7948;"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="dropdown">
-                        <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi-person-circle h2" style="color: #ff7948;"></i>
-                        </a>
-                        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
-                            <li><a class="dropdown-item" href="#">New project...</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                        </ul>
-                    </div>
+    <header>
+        <img src="images/PHOTO_CV.png" alt="coucou">
+        <h1>Antonin<br>Martinez</h1>
+        <h2>Ecole d'ingénieurs CESI</h2>
+        <nav class="nav-page">
+            <a href="#accueil"><i class="fas fa-home"></i> Accueil</a>
+            <a href="#propos"><i class="fas fa-user"></i>   A propos</a>
+            <!--<a href="#experience"><i class="fas fa-lightbulb"></i> Expériences</a>-->
+            <a href="#parcours"><i class="fas fa-graduation-cap"></i> Parcours</a>
+            <a href="#projets"><i class="fas fa-cogs"></i> Projets</a>
+            <a href="#contact"><i class="fas fa-id-card-alt"></i> Contact</a>
+        </nav>
+
+        <!--E N  B A S  L A-->
+        <div class="wrapper">
+            <div class="flex-container">
+                <div class="logonav">
+                    <a href="https://github.com/AntoninMart" class="m-link"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="logonav">
+                    <a href="https://www.linkedin.com/in/antonin-martinez-abb949221/" class="m-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="logonav">
+                    <a href="#" class="m-link"><i class="fas fa-graduation-cap"></i></a>
+                </div>
+                <div class="logonav">
+                    <a href="#" class="m-link"><i class="fas fa-code"></i></a>
                 </div>
             </div>
-            <div class="col-sm p-3 min-vh-100">
-
-                <!-- --------------- -->
-                <!--  A C C U E I L  -->
-                <!-- --------------- -->
-                <section id="Accueil" class="col-sm-auto" style="background-color: rgba(245, 245, 245, 0.7); min-height: 80vh; border-radius: 25px; padding: 2vh; margin-top: 2vh;">
-                    <h1>Accueil</h1>
-                    <div class="home-anim">
-                        <!--T I T R E  P A G E  D ' A C C U E I L-->
-                        <span>ET</span> <!-- 1 -->
-                        <span>UD</span> <!-- 2 -->
-                        <span>IA</span> <!-- 3 -->
-                        <span>NT</span> <!-- 4 -->
-                        <span>_</span> <!-- 5 -->
-                        <span>IN</span> <!-- 6 -->
-                        <span>GE</span> <!-- 7 -->
-                        <span>NI</span> <!-- 8 -->
-                        <span>EU</span> <!-- 9 -->
-                        <span>R</span> <!-- 10 -->
-                        <span>!</span> <!-- 11 -->
-                    </div>
-                </section>
-
-                <!-- --------------- -->
-                <!-- P A R C O U R S -->
-                <!-- --------------- -->
-                <section id="Parcours" class="col-sm-auto" style="background-color: rgba(245, 245, 245, 0.7); min-height: 80vh; border-radius: 25px; padding: 2vh; margin-top: 2vh;">
-                    <h1>Parcours</h1>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="main-timeline">
-                                    <div class="timeline">
-                                        <a href="#" class="timeline-content">
-                                            <div class="timeline-year">2025</div>
-                                            <h3 class="title">CESI Alternance</h3>
-                                            <p class="description">
-                                                Réalisation des trois années d'école d'ingénieur en Alternance. 
-                                                Alternant ingénieur informatique chez Nestle. 
-                                            </p>
-                                            <div class="timeline-icon"><i class="fa fa-globe"></i></div>
-                                        </a>
-                                    </div>
-                                    <div class="timeline">
-                                        <a href="#" class="timeline-content">
-                                            <div class="timeline-year">2022</div>
-                                            <h3 class="title">CESI Ecole ingénieur</h3>
-                                            <p class="description">
-                                                Réalisation des deux années de cycle préparatoire au CESI de Reims.
-                                                Choix de la spécialité informatique en seconde année.
-                                            </p>
-                                            <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
-                                        </a>
-                                    </div>
-                                    <div class="timeline">
-                                        <a href="#" class="timeline-content">
-                                            <div class="timeline-year">2020</div>
-                                            <h3 class="title">Lycée St Jean Baptiste</h3>
-                                            <p class="description">
-                                                Bac Scientifique et technologique de l'industrie et du développement durable.
-                                                Baccalauréat obtenu avec la mention Assez Bien.
-                                            </p>
-                                            <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
-                                        </a>
-                                    </div>
-                                    <div class="timeline">
-                                        <a href="#" class="timeline-content">
-                                            <div class="timeline-year">2018</div>
-                                            <h3 class="title">Lycée Sacré coeur</h3>
-                                            <p class="description">
-                                                Seconde générale.
-                                            </p>
-                                            <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="test" class="col-sm-auto" style="background-color: rgba(245, 245, 245, 0.7); min-height: 80vh; border-radius: 25px; padding: 2vh; margin-top: 2vh;">
-                    <h1>Projet</h1>
-                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="margin-left: 2%; height: 30%; width: 60%;">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="images/Dumbot_UwU.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>First slide label</h5>
-                              <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="images/Dumbot_UwU.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Second slide label</h5>
-                              <p>Some representative placeholder content for the second slide.</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="images/Dumbot_UwU.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>Third slide label</h5>
-                              <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                </section>
-            </div>
         </div>
-    </div>
-  
+    </header>
 
+    <section>
+        <div class="home_title">
+            <h1>
+                <a style="text-decoration: none; color: #fff;" href="" class="typewrite" data-period="2000" data-type='[ "Bonjour, Je suis Antonin.", "Je suis étudiant.", "En école d&#8217ingénieur.", "Et je suis passionné par le développement" ]'>
+                  <span class="wrap"></span>
+                </a>
+            </h1>
+        </div>
+        
+    </section>
+    <section>
+        <h1>TEST</h1>
+    </section>
     <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <!-- SCRIPT JS -->

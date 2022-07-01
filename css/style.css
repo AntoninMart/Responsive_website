@@ -1,284 +1,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:wght@100..700&display=swap');
 
-/* section{
-    background-color: red;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
 
 body {
-    padding: 0;
-    margin: 0;
-    /* background-color: #efefef; */
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    /* scroll-behavior: smooth; */
-    background-image: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
-    background-size: 400% 400%;
-    animation: bganimation 15s infinite;
+    background-color: #161623;
+    /* min-height: 100vh; */
 }
 
-@keyframes bganimation {
-    0%{
-      background-position: 0% 50%;
-    }
-    50%{
-      background-position: 100% 50%;
-    }
-    100%{
-      background-position: 0% 50%;
-    }
-  }
-  
 
-a {
-    text-decoration: none;
-}
-
-.main-timeline{ font-family: 'Josefin Sans', sans-serif; }
-.main-timeline:after{
+body::before {
     content: '';
-    display: block;
-    clear: both;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2d2dff, #ff2f2f);
+    clip-path: circle(25% at right);
 }
-.main-timeline .timeline{
-    width: 50%;
-    margin: 0 5px 0 0;
-    float: left;
+
+body::after {
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background: linear-gradient(#870aec, #6e0b81);
+    clip-path: circle(20% at 10% 10%)
 }
-.main-timeline .timeline-content{
-    color: #333;
-    padding: 30px 80px 30px 100px;
-    border-radius: 30px;
-    display: block;
-    overflow: hidden;
+
+header {
+    background-color: #ff794898;
+    backdrop-filter: blur(10px);
+    height: 90vh;
+    width: 20vw;
+    margin-left: 10vw;
+    margin-top: 15px;
+    position: fixed;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+section {
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.233);
+    backdrop-filter: blur(10px);
+    min-height: 80vh;
+    height: auto;
+    width: 55vw;
+    margin-left: 35vw;
+    margin-top: 15px;
+    padding: 5vw;
+    padding-bottom: 5vh;
     position: relative;
     z-index: 1;
 }
-.main-timeline .timeline-content:hover{ text-decoration: none; }
-.main-timeline .timeline-content:before,
-.main-timeline .timeline-content:after{
-    content: '';
-    background-color: #6E13AE;
-    border-radius: 30px;
-    position: absolute;
-    top: 10px;
-    bottom: 0;
-    left: 70px;
-    right: 0;
-    z-index: -1;
-}
-.main-timeline .timeline-content:after{
-    background-color: rgba(255,255,255,0.8);
-    right: 55px;
-    left: 0;
-    top: 0;
-    bottom: 10px;
-}
-.main-timeline .timeline-year{
-    color: #fff;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 30px;
-    transform: translateY(-50%) rotate(-90deg);
-    position: absolute;
-    top: calc(50% + 5px);
-    right: -10px;
-    z-index: 1;
-}
-.main-timeline .timeline-icon{
-    font-size: 30px;
-    font-weight: 600;
-    transform: translateY(-50%);
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    z-index: 1;
-}
-.main-timeline .title{
-    color: #6E13AE;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0 0 3px;
-}
-.main-timeline .description{
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    letter-spacing: 1px;
-    margin: 0;
-}
-.main-timeline .timeline:nth-child(even){
-    float: right;
-    margin: 0 0 0 5px;
-}
-.main-timeline .timeline:nth-child(even) .timeline-content{ padding: 30px 100px 30px 80px; }
-.main-timeline .timeline:nth-child(even) .timeline-content:before{
-    left: 0;
-    right: 70px;
-}
-.main-timeline .timeline:nth-child(even) .timeline-content:after{
-    right: 0;
-    left: 55px;
-}
-.main-timeline .timeline:nth-child(even) .timeline-year{
-    right: auto;
-    left: 0;
-}
-.main-timeline .timeline:nth-child(even) .timeline-icon{
-    right: 20px;
-    left: auto;
-}
-.main-timeline .timeline:nth-child(4n+2) .timeline-content:before{ background-color: #FD5902; }
-.main-timeline .timeline:nth-child(4n+2) .title{ color: #FD5902; }
-.main-timeline .timeline:nth-child(4n+3) .timeline-content:before{ background-color: #4C63FF; }
-.main-timeline .timeline:nth-child(4n+3) .title{ color: #4C63FF; }
-.main-timeline .timeline:nth-child(4n+4) .timeline-content:before{ background-color: #F71D51; }
-.main-timeline .timeline:nth-child(4n+4) .title{ color: #F71D51; }
-@media screen and (max-width:767px){
-    .main-timeline .timeline,
-    .main-timeline .timeline:nth-child(even){
-        width: 100%;
-        margin: 0 0 20px 0;
-    }
-}
-@media screen and (max-width:479px){
-    .main-timeline .timeline .timeline-content,
-    .main-timeline .timeline:nth-child(even) .timeline-content{
-        padding: 70px 40px;
-    }
-    .main-timeline .timeline .timeline-content:before,
-    .main-timeline .timeline:nth-child(even) .timeline-content:after{
-        top: 50px;
-        bottom: 0;
-        left: 10px;
-    }
-    .main-timeline .timeline .timeline-content:after,
-    .main-timeline .timeline:nth-child(even) .timeline-content:before{
-        bottom: 50px;
-        top: 0;
-        right: 10px;
-    }
-    .main-timeline .timeline .timeline-year{
-        transform: translateY(0) rotate(0);
-        top: auto;
-        bottom: 7px;
-        right: 20px;
-    }
-    .main-timeline .timeline:nth-child(even) .timeline-year{
-        top: 12px;
-        left: 20px;
-    }
-    .main-timeline .timeline .timeline-icon{
-        transform: translateY(0);
-        top: 7px;
-        left: 30px;
-    }
-    .main-timeline .timeline:nth-child(even) .timeline-icon{
-        top: auto;
-        bottom: 1px;
-        right: 30px;
-    }
+
+header img {
+    margin: 7.5%;
+    width: 40%;
+    border-radius: 100%;
 }
 
-/*------------------------------------------------------*/
-/*--------------------A N I M  T E X T------------------*/
-/*------------------------------------------------------*/
-
-.home-anim {
+header h1{
     margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    z-index: 1;
-    color: black;
-    font-family: "Roboto Mono", monospace;
-    font-size: 50px;
-    font-weight: 200;
-    letter-spacing: 5px;
+    margin-left: 7.5%;
+    overflow: hidden;
+    font-size: 48px;
+    font-size: 2.5rem;
+}
+
+header h2{
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+    margin-left: 7.5%;
     overflow: hidden;
 }
 
-/*E T U D I A N T*/
-
-.home-anim span:nth-child(1){
-    color: black;
-    animation: animText 0.8s ease-in-out infinite;
+.nav-page{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
 }
 
-.home-anim span:nth-child(2){
-    color: black;
-    animation: animText 1.2s ease-in-out infinite;
+.nav-page a{
+    margin-left: 7.5%;
+    margin-bottom: 7%;
+    font-weight: 600;
+    transition-duration: 250ms;
+    text-decoration: none;
+    color: white;
 }
 
-.home-anim span:nth-child(3){
-    color: black;
-    animation: animText 1.6s ease-in-out infinite;
+.nav-page a:hover{
+    color: #FFC857;
 }
 
-.home-anim span:nth-child(4){
-    color: black;
-    animation: animText 1.8s ease-in-out infinite;
+.nav-page i {
+    margin-right: 5%;
+    font-weight: 600;
 }
 
-/*I N G E N I E U R*/
 
-.home-anim span:nth-child(5){
-    color: black;
-    animation: animText 0.8s ease-in-out infinite;
+header p {
+    margin: 0;
+    margin-bottom: 0%;
+    font-size: 0.5em;
 }
 
-.home-anim span:nth-child(6){
-    color: black;
-    animation: animText 1.2s ease-in-out infinite;
+scroll-container {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
-.home-anim span:nth-child(7){
-    color: black;
-    animation: animText 1.6s ease-in-out infinite;
-}
-
-.home-anim span:nth-child(8){
-    color: black;
-    animation: animText 2.2s ease-in-out infinite;
-}
-
-.home-anim span:nth-child(9){
-    color: black;
-    animation: animText 2.4s ease-in-out infinite;
-}
-
-.home-anim span:nth-child(10){
-    color: black;
-    animation: animText 2.6s ease-in-out infinite;
-}
-
-/* ! */
-
-.home-anim span:nth-child(11){
-    color: black;
-    animation: animMark 1s ease-in-out infinite;
-}
-
-@keyframes animText {
-    0%{
-        font-weight: 200;
-    }
-    50%{
-        font-weight: 900;
-    }
-    100%{
-        font-weight: 200;
-    }
-}
-
-@keyframes animMark{
-    0%{
-        transform: rotate(30deg);
-    }
-    50%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(30deg);
-    }
+.home_title{
+    text-align: center;
 }
