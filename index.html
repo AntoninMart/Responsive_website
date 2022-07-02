@@ -80,19 +80,150 @@
         <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="images/code.jpg" class="img-fluid rounded-start" alt="...">
+                <img src="images/zikmu.jpg" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Mes passions</h5>
-                  <p class="card-text">Martinez Antonin </p>
-                  <p class="card-text">J'ai actuellement 19 ans <br>né le 16 octobre 2002 <br> </p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <p class="card-text">Sport : <br> 4 ans de parkour <br> Musculation  </p>
+                  <p class="card-text">Musique :  <br> 7 ans d'orchestre à l'Harmonie de Reim <br> 7 ans de Guitare électrique </p>
                 </div>
               </div>
             </div>
+        </div>  
+    </section>
+
+    <section id="parcours">
+      <h1>Parcours</h1>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-timeline">
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <div class="timeline-year">2025</div>
+                            <h3 class="title">CESI Alternance</h3>
+                            <p class="description">
+                                Réalisation des 3 années d'ingénieur en alternance.
+                                Alternant chez Nestle
+                            </p>
+                            <div class="timeline-icon"><i class="fa fa-globe"></i></div>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="#" class="timeline-content">
+                            <div class="timeline-year">2022</div>
+                            <h3 class="title">CESI Reims</h3>
+                            <p class="description">
+                              Fin de seconde année de cycle préparatoire d'école d'ingénieur à CESI
+                            </p>
+                            <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                      <a href="#" class="timeline-content">
+                          <div class="timeline-year">2020</div>
+                          <h3 class="title">Lycée St Jean Baptiste</h3>
+                          <p class="description">
+                            Obtenition du Bac STI2D Mention assez bien.
+                          </p>
+                          <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
+                      </a>
+                  </div>
+                  <div class="timeline">
+                    <a href="#" class="timeline-content">
+                        <div class="timeline-year">2018</div>
+                        <h3 class="title">Lycée Sacrès coeur</h3>
+                        <p class="description">
+                          Seconde générale
+                        </p>
+                        <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
+                    </a>
+                </div>
+                </div>
+            </div>
         </div>
-          
+    </div>
+    </section>
+
+    <section id="projets">
+      <h1>Projet</h1>
+      <div class="card-group">
+        <div class="card">
+          <img src="images/discord.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dumbot</h5>
+            <p class="card-text">Création d’un bot certifié par Discord. Ce dernier ayant rejoint plus de 250 communautés et ayant été utilisé par plus de 50.000 utilisateurs de la plateforme.</p>
+            <p class="card-text"><small class="text-muted">Sept 2020 - Mars 2021</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/inetum.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Projet stage Inetum</h5>
+            <p class="card-text">Réalisation d'une application gardant à jour les données d'une base de données de l'entreprise</p>
+            <p class="card-text"><small class="text-muted">Avr 2022 - juil 2022</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/site.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Portfoloio</h5>
+            <p class="card-text">Développement / hébergement site web portfolio.</p>
+            <p class="card-text"><small class="text-muted">2022</small></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <h4>En cours de developpement</h4>
+        <div class="container py-4">
+
+          <!-- Bootstrap 5 starter form -->
+          <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+        
+            <!-- Name input -->
+            <div class="mb-3">
+              <label class="form-label" for="name">Name</label>
+              <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+              <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+            </div>
+        
+            <!-- Email address input -->
+            <div class="mb-3">
+              <label class="form-label" for="emailAddress">Email Address</label>
+              <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+              <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+              <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+            </div>
+        
+            <!-- Message input -->
+            <div class="mb-3">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+              <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+            </div>
+        
+            <!-- Form submissions success message -->
+            <div class="d-none" id="submitSuccessMessage">
+              <div class="text-center mb-3">Form submission successful!</div>
+            </div>
+        
+            <!-- Form submissions error message -->
+            <div class="d-none" id="submitErrorMessage">
+              <div class="text-center text-danger mb-3">Error sending message!</div>
+            </div>
+        
+            <!-- Form submit button -->
+            <div class="d-grid">
+              <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+            </div>
+        
+          </form>
+        
+        </div>
     </section>
     <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
