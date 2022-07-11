@@ -31,7 +31,7 @@ body::before {
     top: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#2d2dff, #ff2f2f);
+    background: linear-gradient(#ffbe0b, #ff7948b6);
     clip-path: circle(25% at right);
 }
 
@@ -43,7 +43,7 @@ body::after {
     width: 100%;
     min-height: 100%;
     height: 100%;
-    background: linear-gradient(#870aec, #6e0b81);
+    background: linear-gradient(#3a86ff, #ff006e);
     clip-path: circle(20% at 10% 10%)
 }
 
@@ -133,7 +133,6 @@ section {
 .header_top{
     position: fixed;
     z-index: 4;
-    background-color: red;
     min-height: 5em;
     width: 100%;
     top: 0;
@@ -317,9 +316,66 @@ scroll-container {
         padding-left: 1em;
     }
 
+    .nav-top-2 {
+        visibility: hidden;
+    }
     section {
         top: 5em;
         margin: 2vh;
         width: 93%;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .header_top{
+        height: 3em;
+    }
+
+    .nav-page-top {
+        visibility: hidden;
+    }
+
+    .nav-top-2 {
+        visibility: visible;
+        font-size: 35px;
+        margin-top: -2em;
+    }
+}
+
+@media screen and (max-width: 397px) {
+    .header_top{
+        visibility: visible;
+    }
+
+    .nav-page-top {
+        visibility: hidden;
+    }
+
+    .nav-top-2 {
+        visibility: visible;
+        font-size: 30px;
+        margin-top: -2.5em;
+    }
+
+    /* section {
+        top: 0;
+    } */
+}
+
+@media screen and (max-width: 345px) {
+    .header_top{
+        visibility: hidden;
+    }
+
+    .nav-page-top {
+        visibility: hidden;
+    }
+
+    .nav-top-2 {
+        visibility: hidden;
+    }
+
+    section {
+        top: 0;
     }
 }
